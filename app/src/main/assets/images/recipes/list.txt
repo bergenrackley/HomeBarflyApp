@@ -1,0 +1,36 @@
+ Volume in drive C has no label.
+ Volume Serial Number is 3363-5B20
+
+ Directory of C:\Users\Bergen Rackley\AndroidStudioProjects\HomeBarfly\app\src\main\assets\images\recipes
+
+12/06/2022  10:33 PM    <DIR>          .
+12/06/2022  10:33 PM    <DIR>          ..
+12/06/2022  10:28 PM            99,549 a. j..jpg
+12/06/2022  10:28 PM           115,453 a1.jpg
+12/06/2022  09:01 PM            38,120 ABC.jpg
+12/06/2022  09:01 PM            67,445 Abilene.jpg
+12/06/2022  09:01 PM            98,680 Acapulco.jpg
+12/06/2022  09:01 PM            86,826 Ace.jpg
+12/06/2022  09:01 PM            50,860 ACID.jpg
+12/06/2022  10:29 PM            19,229 Adam Bomb.jpg
+12/06/2022  09:01 PM            99,397 Adam.png
+12/06/2022  09:01 PM           144,975 Addington.jpg
+12/06/2022  09:01 PM           190,625 Addison.jpg
+12/06/2022  09:01 PM            26,920 Affair.png
+12/06/2022  09:01 PM           128,753 Affinity.jpg
+12/06/2022  09:54 PM            46,133 After sex.jpg
+12/06/2022  09:01 PM            34,975 Afterglow.jpg
+12/06/2022  09:02 PM           381,908 Afternoon.jpg
+12/06/2022  09:02 PM           114,461 Alexander.jpg
+12/06/2022  09:02 PM           210,362 Algonquin.jpg
+12/06/2022  09:02 PM            13,980 Allegheny.png
+12/06/2022  10:31 PM            20,845 Almeria.jpg
+12/06/2022  10:31 PM            22,418 Apello.jpg
+12/06/2022  10:31 PM            68,307 Applecar.jpg
+12/06/2022  10:32 PM            33,826 AT&T.jpg
+12/06/2022  10:32 PM             6,746 Avalon.jpg
+12/06/2022  09:01 PM            95,430 Aviation.jpg
+10/28/2022  11:26 AM           176,054 default.png
+12/06/2022  10:33 PM                 0 list.txt
+              27 File(s)      2,392,277 bytes
+               2 Dir(s)  26,827,243,520 bytes free
