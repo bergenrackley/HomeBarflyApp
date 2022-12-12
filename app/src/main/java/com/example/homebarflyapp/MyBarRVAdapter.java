@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.database.Cursor;
 import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,6 +44,7 @@ public class MyBarRVAdapter extends RecyclerView.Adapter<MyBarRVAdapter.ViewHold
         public ImageView deleteIngredientIcon;
         public ImageView gridOverlay;
         public ImageView ingredientImage;
+        public ImageView textBackground;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -52,6 +54,7 @@ public class MyBarRVAdapter extends RecyclerView.Adapter<MyBarRVAdapter.ViewHold
             deleteIngredientIcon = (ImageView)itemView.findViewById(R.id.deleteIngredientIcon);
             gridOverlay = (ImageView)itemView.findViewById(R.id.myBarOverlay);
             ingredientImage = (ImageView)itemView.findViewById(R.id.ingredientIcon);
+            textBackground = (ImageView)itemView.findViewById(R.id.ingredientTextBackground);
 
             itemView.setOnClickListener(this);
         }
@@ -102,6 +105,7 @@ public class MyBarRVAdapter extends RecyclerView.Adapter<MyBarRVAdapter.ViewHold
         ImageView gridOverlay = holder.gridOverlay;
         ImageView deleteIngredientIcon = holder.deleteIngredientIcon;
         ImageView ingredientImage = holder.ingredientImage;
+        ImageView textBackground = holder.textBackground;
 
         try
         {
@@ -120,21 +124,25 @@ public class MyBarRVAdapter extends RecyclerView.Adapter<MyBarRVAdapter.ViewHold
 
         if (editMode) {
             if (ingredientItem.getIngredientName() == "add_ingredient_placeholder") {
+                textBackground.setVisibility(View.INVISIBLE);
                 ingredientImage.setImageResource(R.drawable.null_shape);
                 deleteIngredientIcon.setVisibility(View.VISIBLE);
                 deleteIngredientIcon.setImageResource(R.drawable.ic_baseline_add_24);
                 gridOverlay.setVisibility(View.INVISIBLE);
                 nameView.setVisibility(View.INVISIBLE);
             } else if (selectedPos == position) {
+                textBackground.setVisibility(View.INVISIBLE);
                 gridOverlay.setVisibility(View.VISIBLE);
                 deleteIngredientIcon.setVisibility(View.VISIBLE);
                 nameView.setVisibility(View.INVISIBLE);
             } else {
+                textBackground.setVisibility(View.VISIBLE);
                 gridOverlay.setVisibility(View.INVISIBLE);
                 deleteIngredientIcon.setVisibility(View.INVISIBLE);
                 nameView.setVisibility(View.VISIBLE);
             }
         } else {
+            textBackground.setVisibility(View.VISIBLE);
             gridOverlay.setVisibility(View.INVISIBLE);
             deleteIngredientIcon.setVisibility(View.INVISIBLE);
             nameView.setVisibility(View.VISIBLE);

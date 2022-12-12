@@ -29,6 +29,16 @@
         app:layout_constraintWidth_percent="1"
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
+    <ImageView
+        android:id="@+id/ingredientTextBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/overlay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="2:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="1" />
+
     <TextView
         android:id="@+id/ingredientIconName"
         android:layout_width="wrap_content"
@@ -52,4 +62,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth_percent="1" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
