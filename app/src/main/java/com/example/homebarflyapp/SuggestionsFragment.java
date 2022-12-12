@@ -13,7 +13,7 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.homebarfly.model.SuggestedIngredient;
+import com.example.homebarflyapp.model.SuggestedIngredient;
 
 import java.util.ArrayList;
 import java.util.List;

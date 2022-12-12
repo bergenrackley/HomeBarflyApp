@@ -39,13 +39,13 @@ public class RecipeToolbarFragment extends Fragment {
 
         filterIcon.setOnClickListener((e) -> {
             FragmentManager fm = getParentFragmentManager();
-            com.example.homebarfly.RecipeFragment fragm = (com.example.homebarfly.RecipeFragment)fm.findFragmentById(R.id.fragment_container);
+            com.example.homebarflyapp.RecipeFragment fragm = (com.example.homebarflyapp.RecipeFragment)fm.findFragmentById(R.id.fragment_container);
             fragm.showFilterDialog();
         });
 
         addIcon.setOnClickListener((e) -> {
             FragmentManager fm = getParentFragmentManager();
-            com.example.homebarfly.RecipeFragment fragm = (com.example.homebarfly.RecipeFragment)fm.findFragmentById(R.id.fragment_container);
+            com.example.homebarflyapp.RecipeFragment fragm = (com.example.homebarflyapp.RecipeFragment)fm.findFragmentById(R.id.fragment_container);
             fragm.showNewRecipeIngredientsDialog();
         });
 

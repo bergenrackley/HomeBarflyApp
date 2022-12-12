@@ -15,7 +15,7 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.homebarfly.model.AddIngredient;
+import com.example.homebarflyapp.model.AddIngredient;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -17,7 +17,7 @@ import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.homebarfly.model.Recipe;
+import com.example.homebarflyapp.model.Recipe;
 
 import org.apache.commons.lang3.StringUtils;
 

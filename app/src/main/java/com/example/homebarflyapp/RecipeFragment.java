@@ -65,7 +65,7 @@ public class RecipeFragment extends Fragment {
         }
     }
 
-    public List<com.example.homebarfly.RecipeRVAdapter> adapters = new ArrayList<com.example.homebarfly.RecipeRVAdapter>();
+    public List<com.example.homebarflyapp.RecipeRVAdapter> adapters = new ArrayList<com.example.homebarflyapp.RecipeRVAdapter>();
 
     List<String> filterIngredients;
 
@@ -116,7 +116,7 @@ public class RecipeFragment extends Fragment {
         Collections.sort(almostHaveList, Recipe.compareByIngredient());
         Collections.sort(allRecipeList, Recipe.compareByName());
 
-        adapters = new ArrayList<com.example.homebarfly.RecipeRVAdapter>();
+        adapters = new ArrayList<com.example.homebarflyapp.RecipeRVAdapter>();
         adapters.add(setRV(view.findViewById(R.id.rtmRV), recipeList));
         adapters.add(setRV(view.findViewById(R.id.nmiRV), almostHaveList));
         adapters.add(setRV(view.findViewById(R.id.arRV), allRecipeList));
@@ -133,7 +133,7 @@ public class RecipeFragment extends Fragment {
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                for (com.example.homebarfly.RecipeRVAdapter adapter : adapters) {
+                for (com.example.homebarflyapp.RecipeRVAdapter adapter : adapters) {
                     adapter.filterView(newText);
                 }
                 return true;
@@ -143,10 +143,10 @@ public class RecipeFragment extends Fragment {
         return view;
     }
 
-    private com.example.homebarfly.RecipeRVAdapter setRV(RecyclerView recyclerView, List<Recipe> recipeList) {
+    private com.example.homebarflyapp.RecipeRVAdapter setRV(RecyclerView recyclerView, List<Recipe> recipeList) {
         int numberOfColumns = 4;
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), numberOfColumns));
-        com.example.homebarfly.RecipeRVAdapter adapter = new com.example.homebarfly.RecipeRVAdapter(recipeList);
+        com.example.homebarflyapp.RecipeRVAdapter adapter = new com.example.homebarflyapp.RecipeRVAdapter(recipeList);
         recyclerView.setAdapter(adapter);
 
         final int spacing = getResources().getDimensionPixelSize(R.dimen.gridSpacing);
@@ -215,7 +215,7 @@ public class RecipeFragment extends Fragment {
                 filterIngredients.add(ingredient.getIngredientName());
             }
             dialog.dismiss();
-            for (com.example.homebarfly.RecipeRVAdapter recipeAdapter : adapters) {
+            for (com.example.homebarflyapp.RecipeRVAdapter recipeAdapter : adapters) {
                 recipeAdapter.setFilterIngredients(filterIngredients);
             }
         });
@@ -223,7 +223,7 @@ public class RecipeFragment extends Fragment {
         Button cancelButton = dialog.findViewById(R.id.clearFilterButton);
         cancelButton.setOnClickListener((e) -> {
             filterIngredients.clear();
-            for (com.example.homebarfly.RecipeRVAdapter recipeAdapter : adapters) {
+            for (com.example.homebarflyapp.RecipeRVAdapter recipeAdapter : adapters) {
                 recipeAdapter.setFilterIngredients(filterIngredients);
             }
             dialog.dismiss();

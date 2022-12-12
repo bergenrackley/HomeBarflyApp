@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.homebarfly.model.SuggestedIngredient;
+import com.example.homebarflyapp.model.SuggestedIngredient;
 
 import java.util.List;
 

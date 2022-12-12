@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.homebarfly.model.AddIngredient;
+import com.example.homebarflyapp.model.AddIngredient;
 
 import java.util.List;
 
