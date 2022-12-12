@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themeDark">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/recipeSearchBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/themeLight"
+        android:theme="@style/SearchViewStyle"
+        app:iconifiedByDefault="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:queryHint="Search recipes..." />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@+id/recipeSearchBox">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rtmLabel"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/themeLight"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="Ready To Make"
+                android:textColor="@color/themeDark"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rtmRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/gridSpacing">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/nmiLabel"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/themeLight"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="Need more ingredients..."
+                android:textColor="@color/themeDark"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/nmiRV"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:maxHeight="500dp"
+                android:padding="@dimen/gridSpacing">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/allRecipesLabel"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/themeLight"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="All Recipes"
+                android:textColor="@color/themeDark"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/arRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="500dp"
+                android:padding="@dimen/gridSpacing">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

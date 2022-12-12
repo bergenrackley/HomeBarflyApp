@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/themeMed">
+
+    <TextView
+        android:id="@+id/filterRecipes"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/themeLight"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="Filter Recipes"
+        android:textColor="@color/themeDark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/closeFilterButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="Close"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipeFilterSearchRV" />
+
+    <Button
+        android:id="@+id/clearFilterButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Clear"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipeFilterSearchRV" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/recipeFilterSearchBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/themeLight"
+        android:theme="@style/SearchViewStyle"
+        app:iconifiedByDefault="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filterRecipes"
+        app:layout_constraintWidth_percent=".97"
+        app:queryHint="Search ingredients..." />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recipeFilterSearchRV"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipeFilterSearchBox"
+        app:layout_constraintWidth_percent=".97" />
+</androidx.constraintlayout.widget.ConstraintLayout>

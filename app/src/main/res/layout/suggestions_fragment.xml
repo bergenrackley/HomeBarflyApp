@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themeDark"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/suggestions_baseSpiritsLabel"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/themeLight"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="Base Spirits"
+                android:textColor="@color/themeDark"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/suggestions_baseSpiritsRV"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="@dimen/gridSpacing">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/suggestions_liqueursLabel"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/themeLight"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="Liqueurs"
+                android:textColor="@color/themeDark"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/suggestions_liqueursRV"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="@dimen/gridSpacing">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/suggestions_mixinsLabel"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/themeLight"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="Mix-ins"
+                android:textColor="@color/themeDark"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/suggestions_mixinsRV"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="@dimen/gridSpacing">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
