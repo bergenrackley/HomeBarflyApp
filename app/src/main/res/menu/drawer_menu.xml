@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    android:background="@color/themeMed">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_recipes"
+            android:icon="@drawable/ic_baseline_wine_bar_24"
+            android:title="Recipes" />
+        <item
+            android:id="@+id/nav_ingredients"
+            android:icon="@drawable/ic_baseline_calendar_view_month_24"
+            android:title="My Bar" />
+        <item
+            android:id="@+id/nav_suggestions"
+            android:icon="@drawable/ic_baseline_crisis_alert_24"
+            android:title="Suggestions" />
+    </group>
+</menu>
