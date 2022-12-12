@@ -18,7 +18,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.homebarfly.model.AddIngredient;
+import com.example.homebarflyapp.model.AddIngredient;
 
 import java.io.IOException;
 import java.io.InputStream;

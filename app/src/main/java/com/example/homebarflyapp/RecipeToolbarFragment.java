@@ -27,8 +27,8 @@ public class RecipeToolbarFragment extends Fragment {
         favoriteIcon.setOnClickListener((e) -> {
             onlyFavorites = !onlyFavorites;
             FragmentManager fm = getParentFragmentManager();
-            com.example.homebarfly.RecipeFragment fragm = (com.example.homebarfly.RecipeFragment)fm.findFragmentById(R.id.fragment_container);
-            for (com.example.homebarfly.RecipeRVAdapter adapter : fragm.adapters) {
+            com.example.homebarflyapp.RecipeFragment fragm = (com.example.homebarflyapp.RecipeFragment)fm.findFragmentById(R.id.fragment_container);
+            for (com.example.homebarflyapp.RecipeRVAdapter adapter : fragm.adapters) {
                 adapter.toggleFavorites();
             }
 

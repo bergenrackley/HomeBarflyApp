@@ -21,8 +21,8 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.homebarfly.model.AddIngredient;
-import com.example.homebarfly.model.Recipe;
+import com.example.homebarflyapp.model.AddIngredient;
+import com.example.homebarflyapp.model.Recipe;
 
 import java.util.ArrayList;
 import java.util.Collections;

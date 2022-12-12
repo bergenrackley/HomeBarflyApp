@@ -10,7 +10,7 @@ import android.widget.CheckBox;
 import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.homebarfly.model.AddIngredient;
+import com.example.homebarflyapp.model.AddIngredient;
 
 import java.util.ArrayList;
 import java.util.List;
